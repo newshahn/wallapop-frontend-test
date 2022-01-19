@@ -1,0 +1,39 @@
+$primary-color: #13c1ac;
+$navbar-item-height: 42px;
+
+:host {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 66px;
+    padding: 0 16px;
+  }
+
+  .wlp-input__search {
+    width: 100%;
+    height: $navbar-item-height;
+    border-radius: 21px;
+    background-color: #eceff1;
+    border: 1px solid transparent;
+
+    color: #253238;
+    padding: 0 32px 0 36px;
+  }
+
+  .wlp-button__favorites {
+    height: $navbar-item-height;
+    border-radius: 25px;
+    padding: 12px 20px;
+
+    cursor: pointer;
+    box-shadow: none;
+
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+
+    color: #fff;
+    margin-left: 15px;
+  }
+}
