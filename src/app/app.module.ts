@@ -7,9 +7,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // material imports
 import { MatDividerModule } from '@angular/material/divider';
+import { WlpItemCardComponent } from './components';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, WlpItemCardComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
