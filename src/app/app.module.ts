@@ -5,9 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+//
+import { WlpItemCardComponent } from './components';
+
 // material imports
 import { MatDividerModule } from '@angular/material/divider';
-import { WlpItemCardComponent } from './components';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [AppComponent, WlpItemCardComponent],
@@ -17,6 +20,7 @@ import { WlpItemCardComponent } from './components';
     BrowserAnimationsModule,
     //
     MatDividerModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
