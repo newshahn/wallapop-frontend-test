@@ -6,7 +6,6 @@ import { WlpItemCardComponent } from './components';
 const routes: Routes = [
   { path: '', redirectTo: '/marketplace', pathMatch: 'full' },
   { path: 'marketplace', component: WlpItemCardComponent },
-  // { path: 'detail/:id', component: PlaceDetailComponent },
 ];
 
 @NgModule({
