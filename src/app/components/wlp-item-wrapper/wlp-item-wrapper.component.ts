@@ -25,7 +25,7 @@ export class WlpItemWrapperComponent implements OnInit {
           })
         )
         .subscribe((response) => {
-          this._cardsData.push(response as Item);
+          this._cardsData = Array.from(response);
         })
     );
   }

@@ -1,11 +1,20 @@
 <mat-card *ngIf="!!data" class="example-card">
   <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
     <mat-card-title>{{ data.title }}</mat-card-title>
     <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
   </mat-card-header>
   <img mat-card-image [src]="data.image" [alt]="'Photo of a ${data.title}'" />
   <mat-card-content>
+    <span>{{ data.price }}</span>
+
+    <button
+      mat-icon-button
+      color="warn"
+      aria-label="Example icon button with a heart icon"
+    >
+      <mat-icon>favorite</mat-icon>
+    </button>
+
     <p>
       {{ data.description }}
     </p>
