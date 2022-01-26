@@ -16,16 +16,18 @@ export class WlpItemWrapperComponent implements OnInit {
   constructor(private restService: WallapopRESTService) {}
 
   ngOnInit(): void {
-    this.restService
-      .getItems()
-      .pipe(
-        map((response) => {
-          return (response as any).items;
+    this._subscriptions.add(
+      this.restService
+        .getItems()
+        .pipe(
+          map((response) => {
+            return (response as any).items;
+          })
+        )
+        .subscribe((response) => {
+          this._cardsData.push(response as Item);
         })
-      )
-      .subscribe((response) => {
-        this._cardsData.push(response as Item);
-      });
+    );
   }
 
   get cardsData(): Item[] {
