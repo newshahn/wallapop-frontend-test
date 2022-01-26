@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 //
-import { WlpItemCardComponent } from './components';
+import { WlpItemWrapperComponent } from './components';
 
 const routes: Routes = [
   { path: '', redirectTo: '/marketplace', pathMatch: 'full' },
-  { path: 'marketplace', component: WlpItemCardComponent },
+  { path: 'marketplace', component: WlpItemWrapperComponent },
 ];
 
 @NgModule({

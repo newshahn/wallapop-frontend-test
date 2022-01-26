@@ -1,1 +1,6 @@
-<p>wlp-item-wrapper works!</p>
+<div class="marketplace__cards">
+  <wlp-item-card
+    *ngFor="let cardData of cardsData"
+    [data]="cardData"
+  ></wlp-item-card>
+</div>
