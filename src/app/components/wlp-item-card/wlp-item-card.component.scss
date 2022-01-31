@@ -1,0 +1,33 @@
+:host {
+  .item__card {
+    max-width: 260px;
+    height: 420px;
+  }
+
+  .item__image {
+    height: 253px;
+
+    object-fit: cover;
+  }
+
+  .item__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .item__title {
+    font-size: 1.1rem;
+  }
+
+  .item__description {
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    line-height: 16px;
+    height: 66px;
+  }
+}

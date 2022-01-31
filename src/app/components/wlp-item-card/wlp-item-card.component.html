@@ -1,26 +1,27 @@
-<mat-card *ngIf="!!data" class="example-card">
-  <mat-card-header>
-    <mat-card-title>{{ data.title }}</mat-card-title>
-    <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
-  </mat-card-header>
-  <img mat-card-image [src]="data.image" [alt]="'Photo of a ${data.title}'" />
+<mat-card class="item__card" *ngIf="!!data">
+  <img
+    class="item__image"
+    mat-card-image
+    [src]="data.image"
+    [alt]="'Photo of a ${data.title}'"
+  />
   <mat-card-content>
-    <span>{{ data.price }}</span>
+    <div class="item__actions">
+      <span>{{ data.price }}€</span>
 
-    <button
-      mat-icon-button
-      color="warn"
-      aria-label="Example icon button with a heart icon"
-    >
-      <mat-icon>favorite</mat-icon>
-    </button>
+      <button
+        mat-icon-button
+        color="warn"
+        aria-label="Example icon button with a heart icon"
+      >
+        <mat-icon>favorite</mat-icon>
+      </button>
+    </div>
 
-    <p>
+    <p class="item__title">{{ data.title }}</p>
+
+    <p class="item__description">
       {{ data.description }}
     </p>
   </mat-card-content>
-  <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
-  </mat-card-actions>
 </mat-card>
